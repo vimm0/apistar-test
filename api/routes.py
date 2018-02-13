@@ -1,7 +1,7 @@
 from apistar import Include, Route
 from apistar.handlers import docs_urls, static_urls
 
-from api.core import welcome, yellow, echo_username
+from api.views import welcome, yellow, echo_username
 
 routes = [
     Route('/', 'GET', welcome),
