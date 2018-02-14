@@ -1,7 +1,7 @@
 settings = {
     'TEMPLATES': {
         'ROOT_DIR': 'templates',
-        'PACKAGE_DIRS': ['apistar']
+        # 'PACKAGE_DIRS': ['apistar']
     }
 }
 
