@@ -9,3 +9,9 @@ class Student(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     address = Column(String)
+
+
+class Customer(Base):
+    __tablename__ = "Customer"
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
