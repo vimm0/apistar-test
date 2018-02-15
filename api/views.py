@@ -8,6 +8,9 @@ from api.models import Customer
 
 @annotate(renderers=[HTMLRenderer()])
 def home():
+    """
+    Home page that serves <a>index.html</a> template.
+    """
     return render_template('index.html')
 
 
@@ -46,6 +49,9 @@ def home():
 
 # CRUD operations in djangoORM
 def create_customer(session: Session, name: str, address: str, city: str, state: str):
+    """
+    Create customer with <u>name, address, city, state fields</u>.
+    """
     customer = session.Customer(name=name, address=address, city=city, state=state)
     customer.save()
     return {'id': customer.id, 'name': customer.name, 'address': customer.address, 'city': customer.city,
@@ -53,6 +59,9 @@ def create_customer(session: Session, name: str, address: str, city: str, state:
 
 
 def list_customers(session: Session):
+    """
+       List the available customer.
+    """
     queryset = session.Customer.objects.all()
     return [
         {'id': customer.id, 'name': customer.name}
