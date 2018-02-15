@@ -11,7 +11,8 @@
 ======
 - [ ] Unable to post values from PostMan.
 - [ ] Standard Project Structure.
-- [ ] BrowserableAPI unable to input value in DjangoORM: Injector could not resolve parameter session:apistar.backends.django_orm.Session
+- [ ] BrowserableAPI unable to input value in DjangoORM
+  * Injector could not resolve parameter session:apistar.backends.django_orm.Session
 
 # TODO Documentation
 ======
@@ -26,9 +27,11 @@
 * https://pypi.python.org/pypi/fa.bootstrap
 * https://pythonhosted.org/sandman/installation.html
 
-### [ SQLAlchemy and djangoORM thread ](https://stackoverflow.com/questions/26366064/mixing-sqlalchemy-and-django-in-python-code-base-and-maintain-transaction-integr#answer-26566301)
+### SQLAlchemy and djangoORM thread:
+* https://stackoverflow.com/questions/26366064/mixing-sqlalchemy-and-django-in-python-code-base-and-maintain-transaction-integr#answer-26566301
 
-### [SQLALchemy and djangoORM differences](http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/):
+### SQLALchemy and djangoORM differences:
+* http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/
 
 
 ### Alembic is Database migration tool for SQLAlchemy.
