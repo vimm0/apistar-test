@@ -1,5 +1,4 @@
 # TODO
-___
 - [x] Create django admin panel.
 - [ ] Choose djangoORM or SQLAlchemy.
 - [ ] SQLAlchemy migration or DjangoORM migration.
@@ -8,21 +7,18 @@ ___
 - [ ] Integrate with vuejs.
 
 # TODO Issues
-___
 - [ ] Unable to post values from PostMan.
 - [ ] Standard Project Structure.
 - [ ] BrowserableAPI unable to input value in DjangoORM
   * Injector could not resolve parameter session:apistar.backends.django_orm.Session
 
 # TODO Documentation
-___
 ###### Poor Official documentation support for API Star.
 - [ ] DjangoORM settings support.
 - [ ] Django Admin configuration.
 - [ ] SQLAlchemy configuration.
 
 # Reading list links:
-___
 ### SQLAlchemy Admin interface:
 * https://pypi.python.org/pypi/fa.bootstrap
 * https://pythonhosted.org/sandman/installation.html
