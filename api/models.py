@@ -30,6 +30,5 @@ class Customer(models.Model):
         app_label = 'api'
 
 
-print('Hello from migrations')
 # class Student(models.Model):
 #     pass

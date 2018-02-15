@@ -23,10 +23,6 @@ DATABASES = {
 }
 
 INSTALLED_APPS = [
-    # 'django.contrib.admin',
-    # 'django.contrib.auth',
-    # 'django.contrib.contenttypes',
-
     'api',
 ]
 settings = {
@@ -39,10 +35,10 @@ settings = {
     #         'PASSWORD': ''
     #     }
     # },
-    # 'TEMPLATES': {
-    #     'ROOT_DIR': 'templates',
-    #     'PACKAGE_DIRS': ['apistar']
-    # },
+    'TEMPLATES': {
+        'ROOT_DIR': 'templates',
+        'PACKAGE_DIRS': ['apistar']
+    },
     # "DATABASE": {
     #     "URL": env['DATABASE_URL'],
     #     "METADATA": Base.metadata

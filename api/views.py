@@ -11,12 +11,6 @@ def home():
     return render_template('index.html')
 
 
-def welcome(name=None):
-    if name is None:
-        return {'message': 'Welcome to API Star!'}
-    return {'message': 'Welcome to API Star, %s!' % name}
-
-
 # CRUD operations
 
 # def create_student(session: Session, name: str, address: str):
@@ -54,7 +48,8 @@ def welcome(name=None):
 def create_customer(session: Session, name: str, address: str, city: str, state: str):
     customer = session.Customer(name=name, address=address, city=city, state=state)
     customer.save()
-    return {'id': customer.id, 'name': customer.name, 'address': customer.address, 'city': customer.city, 'state': customer.state}
+    return {'id': customer.id, 'name': customer.name, 'address': customer.address, 'city': customer.city,
+            'state': customer.state}
 
 
 def list_customers(session: Session):

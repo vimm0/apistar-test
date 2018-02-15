@@ -18,7 +18,7 @@ from api import routes
 app = App(routes=routes.routes,
           settings=base.settings,
           commands=django_orm.commands,  # Install custom commands.
-          components=django_orm.components  # Install custom components.
+          # components=django_orm.components  # Install custom components.
           # commands=sqlalchemy_backend.commands,  # Install custom commands.
           # components=sqlalchemy_backend.components  # Install custom components.
           )
