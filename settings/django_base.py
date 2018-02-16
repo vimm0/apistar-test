@@ -11,7 +11,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'api.urls'
+ROOT_URLCONF = 'api.orm.urls'
 STATIC_URL = '/static/'
 
 TEMPLATES = [

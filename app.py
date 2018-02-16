@@ -1,19 +1,18 @@
 import os
 
 import django
-
-# from apistar.backends import sqlalchemy_backend
-# from apistar.frameworks.wsgi import WSGIApp as App
-from apistar.frameworks.asyncio import ASyncIOApp as App
-
 from apistar.backends import django_orm
+# from apistar.backends import sqlalchemy_backend
+from apistar.frameworks.wsgi import WSGIApp as App
+
+# from apistar.frameworks.asyncio import ASyncIOApp as App
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings.apistar_base'
 
 django.setup()
 
 from settings import apistar_base
-from api import routes
+import routes
 
 app = App(routes=routes.routes,
           settings=apistar_base.settings,
