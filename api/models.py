@@ -29,6 +29,5 @@ class Customer(models.Model):
     class Meta:
         app_label = 'api'
 
-
 # class Student(models.Model):
 #     pass

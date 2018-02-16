@@ -1,6 +1,6 @@
 # TODO
 - [x] Create django admin panel.
-- [ ] Choose djangoORM or SQLAlchemy.
+- [x] Choose djangoORM or SQLAlchemy.
 - [ ] SQLAlchemy migration or DjangoORM migration.
 - [ ] Configure JWT.
 - [ ] Support for third party social applications.
@@ -8,9 +8,10 @@
 
 # TODO Issues
 - [ ] Unable to post values from PostMan.
-- [ ] Standard Project Structure.
-- [ ] BrowserableAPI unable to input value in DjangoORM
+- [x] Standard Project Structure.
+- [x] BrowserableAPI unable to input value in DjangoORM
   * Injector could not resolve parameter session:apistar.backends.django_orm.Session
+  * Fix <u>Settings already configured issue</u> by configuring in DjangoORM class in django_orm.
 
 # TODO Documentation
 ###### Poor Official documentation support for API Star.

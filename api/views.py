@@ -64,6 +64,7 @@ def list_customers(session: Session):
     """
     queryset = session.Customer.objects.all()
     return [
-        {'id': customer.id, 'name': customer.name}
+        {'id': customer.id, 'name': customer.name, 'address': customer.address, 'city': customer.city,
+         'state': customer.state}
         for customer in queryset
     ]
