@@ -5,8 +5,10 @@ from apistar.backends.django_orm import Session
 from apistar import annotate
 from apistar.interfaces import Auth
 from apistar.permissions import IsAuthenticated
+from apistar import Response, http
 
 from apistar_token_auth.authentication import DjangoTokenAuthentication
+from django.contrib.auth import authenticate
 
 from api.models import Customer
 from .schemas import SignupData
@@ -74,6 +76,14 @@ def list_customers(session: Session):
          'state': customer.state}
         for customer in queryset
     ]
+
+
+# Authentication and Authorization
+def logout(session: Session, auth: Auth):
+    del session.user.username
+
+    # import ipdb
+    # ipdb.set_trace()
 
 
 @annotate(authentication=[DjangoTokenAuthentication()],

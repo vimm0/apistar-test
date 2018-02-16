@@ -7,7 +7,7 @@ from api.views import home
 # , create_student, retrieve_student, delete_student
 from api.views import create_customer, list_customers
 
-from api.views import user_profile, signup
+from api.views import user_profile, signup, logout
 routes = [
     Route('/', 'GET', home),
     # CRUD
@@ -21,9 +21,11 @@ routes = [
     Route('/retrieve', 'GET', list_customers),
 
     # apistar_token_authentication
+    Route('/token', 'POST', django_get_token, 'token-login'),
     Route('/profile', 'GET', user_profile, 'User-Profile'),
     Route('/signup', 'POST', signup, 'Signup'),
-    Route('/token', 'POST', django_get_token, 'Login'),
+    Route('/logout', 'POST', logout, 'logout'),
+
 
     Include('/docs', docs_urls),
     Include('/static', static_urls)
