@@ -2,7 +2,7 @@
 - [x] Create django admin panel.
 - [x] Choose djangoORM or SQLAlchemy.
 - [ ] SQLAlchemy migration or DjangoORM migration.
-- [ ] Configure JWT.
+- [x] Configure JWT.
 - [ ] Support for third party social applications.
 - [ ] Integrate with vuejs.
 

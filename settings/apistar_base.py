@@ -2,6 +2,8 @@
 from apistar import environment, typesystem
 
 from .base import *
+from apistar.parsers import JSONParser
+
 # class Env(environment.Environment):
 #     properties = {
 #         'DEBUG': typesystem.boolean(default=False),
@@ -21,4 +23,18 @@ settings = {
     #     "METADATA": Base.metadata
     #
     # },
+    'PARSERS': [JSONParser()],
+    'SCHEMA': {
+        'TITLE': 'User Authentication',
+        'DESCRIPTION': 'authentication'
+    },
+    'TOKEN_AUTHENTICATION': {
+        'IS_EXPIRY_TOKEN': True,
+        'EXPIRY_TIME': 30,
+        'USERNAME_FIELD': 'username',
+        'PASSWORD_FIELD': 'password',
+        'ORM': 'django',
+        'USER_MODEL': 'User',
+        'TOKEN_MODEL': 'AccessToken'
+    }
 }

@@ -3,7 +3,9 @@ import os
 import django
 
 # from apistar.backends import sqlalchemy_backend
-from apistar.frameworks.wsgi import WSGIApp as App
+# from apistar.frameworks.wsgi import WSGIApp as App
+from apistar.frameworks.asyncio import ASyncIOApp as App
+
 from apistar.backends import django_orm
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings.apistar_base'

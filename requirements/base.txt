@@ -1,5 +1,7 @@
 apistar
 SQLAlchemy
 ipdb
-
+apistar-token-auth
+uvicorn
 django
+uvitools
